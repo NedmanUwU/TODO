@@ -1,5 +1,6 @@
 import './App.css';
-import ToDoWrapper from './Components/ToDoWrapper'
+import './Assets/Font/FOT-RodinBokutoh\ Pro\ EB.woff';
+import ToDoWrapper from './Components/ToDoWrapper';
 
 function App() {
   return (

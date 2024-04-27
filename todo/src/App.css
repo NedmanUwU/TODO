@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+  font-family: 'My-font';
+  src: local('FOT-RodinBokutoh'),
+  url('./Assets/Font/FOT-RodinBokutoh Pro EB.woff') format('woff');
+}
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'My-font';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,25 +41,39 @@ h1 {
 }
 
 .ToDo-Input {
+  display: flex;
   outline: none;
   background: none;
   border: 1px solid #8758ff;
-  padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  width: 300px;
   color: #fff;
 }
 
-.ToDo-Input::placeholder {
+.ToDo-Input img{
+  padding-left: 10px;
+}
+
+.Input-field {
+  margin: 5px;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.Input-field::placeholder {
   color: #ffffff4d;
+}
+
+.Input-field:focus {
+  outline: none;
 }
 
 .ToDo-btn {
   background: #8758ff;
   color: #fff;
   border: none;
-  padding: 0.55rem;
+  padding: 10px;
   cursor: pointer;
 }
 
