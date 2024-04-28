@@ -1,18 +1,32 @@
 @font-face {
   font-family: 'My-font';
-  src: local('FOT-RodinBokutoh'),
-  url('./Assets/Font/FOT-RodinBokutoh Pro EB.woff') format('woff');
+  src: local('FOTRodinBokutohProEB'),
+  url("./Assets/Font/FOTRodinBokutohProEB.ttf") format("truetype");
 }
 
+/*PALETTE
+LIGHT GREEN: #bcf8cb
+DARK GREEN: #66b888
+SATURATED GREEN: #a4d740
+
+PALE WHITE: #f5f7e9
+DARK GREY: #39383d
+SPEECH BUBBLE: #f7f5de
+
+REDDISH BROWN: #744436
+YELLOWISH BROWN: #ad7a3e
+TEXT BROWN: #6a4a3f
+*/
+
 * {
-  font-family: 'My-font';
+  font-family: "My-font";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background: #8758ff;
+  background: #bcf8cb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +43,7 @@ h1 {
 }
 
 .ToDoWrapper {
-  background: #1A1A40;
+  background: #66b888;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
@@ -44,25 +58,28 @@ h1 {
   display: flex;
   outline: none;
   background: none;
-  border: 1px solid #8758ff;
+  border: 3px solid #f7f5de;
+  border-radius: 5px;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  color: #fff;
+  color: #f7f5de;
 }
 
 .ToDo-Input img{
   padding-left: 10px;
+  filter: invert(98%) sepia(4%) saturate(1091%) hue-rotate(342deg) brightness(103%) contrast(94%);
+
 }
 
 .Input-field {
   margin: 5px;
   background: none;
   border: none;
-  color: #fff;
+  color: #f7f5de;
 }
 
 .Input-field::placeholder {
-  color: #ffffff4d;
+  color: #f7f5de;
 }
 
 .Input-field:focus {
@@ -70,8 +87,8 @@ h1 {
 }
 
 .ToDo-btn {
-  background: #8758ff;
-  color: #fff;
+  background: #f7f5de;
+  color: #6a4a3f;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -81,15 +98,27 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8758ff;
-  color: #fff;
+  background: #f7f5de;
+  color: #6a4a3f;
   padding: 0.75rem 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-.fa-trash {
-  margin-left: 0.75rem;
+.ToDo p{
+  margin: 0;
+  flex: 0.5;
+}
+
+.ToDo img{
+  margin: 0;
+  padding: 0;
+  margin-left: 0.5rem;
+}
+
+.ToDo .ToDo-Icons {
+  display: flex;
+  align-items: center;
 }
 
 .incompleted {
@@ -103,8 +132,7 @@ h1 {
   cursor: pointer;
 }
 
-.edit-icon,
-.delete-icon {
+.feather-icon, .axe-icon {
   cursor: pointer;
 }
  

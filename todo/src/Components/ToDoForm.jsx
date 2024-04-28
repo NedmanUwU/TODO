@@ -15,14 +15,14 @@ const ToDoForm = ({addTodo}) => {
   return (
     <form className='ToDoForm' onSubmit={handleSubmit}>
       <div className='ToDo-Input'>
-        <img src={icon} className='Icon' />
+        <img src={icon} className='Bar-Icon' />
         <input 
         className= 'Input-field' 
         value= {value}
         placeholder='Write a new task...'
         onChange={(e) => setValue(e.target.value)}/>      
           <button type='submit' className='ToDo-btn' onClick={handleSubmit}>
-             Add Task
+             Add Task!
          </button>
       </div>
     </form>
