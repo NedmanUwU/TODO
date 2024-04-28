@@ -1,14 +1,36 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
-    <div className="header">
-      <h1>Welcome to My Website</h1>
-      <nav className="nav-links">
-        <Link to="/page1" className="nav-link">Page 1</Link>
-        <Link to="/page2" className="nav-link">Page 2</Link>
+    <header style = {headerStyle}>
+      <h1 style={titleStyle}>Welcome to My Website</h1>
+      <nav style= {navStyle} className="nav-links">
+      <Link to="/">Home</Link>
+        <Link to="/todo">Todo</Link>
+        <Link to="/about">About</Link>
       </nav>
-    </div>
-  )
-}
+    </header>
+  );
+};
+
+const headerStyle = {
+    color: "white",
+    padding: "20px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+
+};
+
+const titleStyle = {
+    fontSize: "2rem",
+    margin:"0",
+
+};
+
+const navStyle = {
+
+};
+
 export default Header;
