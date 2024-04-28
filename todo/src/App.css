@@ -27,6 +27,10 @@ TEXT BROWN: #6a4a3f
 
 body {
   background: #bcf8cb;
+  align-items: center;
+  background-image: url("./Assets/Icons/Animal_Crossing_Leaf.png");
+  background-size: 1080px;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +48,7 @@ h1 {
 
 .ToDoWrapper {
   background: #66b888;
-  margin-top: 5rem;
+  margin-top: 15rem;
   padding: 2rem;
   border-radius: 5px;
 }
@@ -110,7 +114,7 @@ h1 {
 
 .ToDo p{
   margin: 0;
-  flex: 0.5;
+  margin-left: 15px;
 }
 
 .ToDo img{
@@ -130,12 +134,12 @@ h1 {
 }
 
 .completed {
-  color: #c5aeff;
-  text-decoration: line-through;
+  color: #6a4a3f;
+  text-decoration: 3px line-through;
   cursor: pointer;
 }
 
-.feather-icon, .axe-icon {
+.feather-icon, .can-icon {
   cursor: pointer;
 }
  

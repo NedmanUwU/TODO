@@ -1,8 +1,11 @@
 import React from 'react'
+import MainContent from '../Components/MainContent'
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div className='App'>
+      <MainContent />
+    </div>
   )
 }
 

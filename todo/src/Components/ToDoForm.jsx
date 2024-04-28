@@ -20,7 +20,8 @@ const ToDoForm = ({addTodo}) => {
         className= 'Input-field' 
         value= {value}
         placeholder='Write a new task...'
-        onChange={(e) => setValue(e.target.value)}/>      
+        onChange={(e) => setValue(e.target.value)}
+        />      
           <button type='submit' className='ToDo-btn' onClick={handleSubmit}>
              Add Task!
          </button>
