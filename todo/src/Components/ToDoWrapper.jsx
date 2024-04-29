@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import ToDoForm from './ToDoForm'
 import ToDo from './ToDo';
 import { v4 as uuidv4 } from 'uuid';
@@ -20,6 +20,10 @@ const ToDoWrapper = () => {
     const deleteTodo = id =>{
       setTodos(todos.filter(todo => todo.id !== id))
     }
+
+    const allCompleted = 
+    todos.length > 0 && todos.every((todo) => todo.completed);
+
   return (
     <div className='ToDoWrapper'>
       <h1>Get working!</h1>
@@ -29,6 +33,7 @@ const ToDoWrapper = () => {
         toggleComplete={toggleComplete}
         deleteTodo={deleteTodo} />
       ))}
+      {allCompleted && <p>Good job! Time to lay back and relax!</p>}
     </div>
   )
 }

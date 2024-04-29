@@ -20,6 +20,7 @@ TEXT BROWN: #6a4a3f
 
 * {
   font-family: "My-font";
+  color: #f7f5de;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,10 +41,23 @@ body {
   text-align: center;
 }
 
-h1 {
-  color: #fff;
-  margin-bottom: 0.5rem;
-  font-size: 1.75rem;
+.header {
+  background-color: #66b888;
+  text-align: center;
+  color: #f7f5de;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+.title {
+  display: flex;
+
+}
+
+.nav{
+  display: "flex",
 }
 
 .ToDoWrapper {
@@ -113,6 +127,7 @@ h1 {
 }
 
 .ToDo p{
+  color: #6a4a3f;
   margin: 0;
   margin-left: 15px;
 }
@@ -143,3 +158,35 @@ h1 {
   cursor: pointer;
 }
  
+.Wrapper{
+  background: #66b888;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  color: #6a4a3f;
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.Wrapper h2{
+  color: #f7f5de;
+  margin: 0;
+  padding: 0;
+}
+
+.Wrapper p{
+  text-align: left;
+  color: #6a4a3f;
+  width: 500px;
+  padding: 20px;
+  margin: 25px;
+  margin-top: 5px;
+  border-radius: 8px;
+  background-color:#f7f5de;
+}
+
+b{
+  color: #09a059;
+}
